@@ -17,6 +17,21 @@ Execution
     node server.js
     
 
+Direct API Calls
+
+    Using postman or other api client you can do the following:
+    
+    POST: http://localhost:8088/api/vendor/imdb
+    Make raw body content type application/json with format below and submit
+    
+    {
+    	"message": {
+    		"name": "help"
+    	}
+    }
+    
+
+
 Thought Process
 
     I wanted to do this in a way that cordoned off the various concerns of the application.  The primary data layer for
