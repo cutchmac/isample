@@ -25,5 +25,3 @@ Thought Process
     that have been defined inside of /lib/apis.  These modules can then function independently of each other and the
     application can have its own api routing to serve them however it wants.
     
-    The front-end application is a simple angular single page application that uses xhr requests to query the server
-    and display the results.
