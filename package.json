@@ -1,0 +1,18 @@
+{
+  "name": "isample",
+  "version": "0.0.1",
+  "private": false,
+  "description": "IMDB Fetch Service with Front-end search sample",
+  "author": "Chris McCutchen <mccutchen.chris@gmail.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@lib/apis": "file:lib/apis",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "imdb-api": "^2.2.2",
+    "request": "^2.81.0"
+  }
+}
