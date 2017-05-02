@@ -1,0 +1,48 @@
+{
+  "name": "isample-frontend",
+  "version": "0.0.1",
+  "private": false,
+  "description": "IMDB Fetch Service with Front-end search sample",
+  "author": "Chris McCutchen <mccutchen.chris@gmail.com>",
+  "scripts": {
+    "init": "npm i",
+    "dev": "webpack-dev-server --inline --hot --progress --port 3000 --quiet"
+  },
+  "dependencies": {
+    "@types/angular": "^1.5.19",
+    "@types/angular-material": "^1.1.40",
+    "@types/es6-collections": "^0.5.29",
+    "angular": "1.5.8",
+    "angular-animate": "1.5.8",
+    "angular-aria": "1.5.8",
+    "angular-material": "^1.1.3",
+    "angular-svg-round-progressbar": "^0.4.8",
+    "angular-ui-router": "1.0.0-beta.3",
+    "awesome-typescript-loader": "^3.1.2",
+    "body-parser": "^1.16.0",
+    "compression": "^1.6.2",
+    "cors": "^2.8.1",
+    "css-loader": "^0.26.1",
+    "es6-promise": "^4.0.5",
+    "es6-promise-promise": "^1.0.0",
+    "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.24.1",
+    "postcss-loader": "^1.2.0",
+    "raw-loader": "^0.5.1",
+    "request": "^2.81.0",
+    "rimraf": "^2.5.4",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.13.1",
+    "typescript": "^2.2.2",
+    "webpack": "^2.3.3",
+    "webpack-merge": "^0.15.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "webpack-dev-server": "^2.2.0-rc.0"
+  }
+}

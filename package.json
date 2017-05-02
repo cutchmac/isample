@@ -6,6 +6,7 @@
   "author": "Chris McCutchen <mccutchen.chris@gmail.com>",
   "main": "server.js",
   "scripts": {
+    "init": "npm i",
     "start": "node server.js"
   },
   "dependencies": {
