@@ -1,6 +1,6 @@
 {
   "name": "isample",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "description": "IMDB Fetch Service with Front-end search sample",
   "author": "Chris McCutchen <mccutchen.chris@gmail.com>",
