@@ -7,7 +7,7 @@
   "main": "server.js",
   "scripts": {
     "init": "npm i",
-    "start": "node server.js"
+    "dev": "node server.js"
   },
   "dependencies": {
     "@lib/apis": "file:lib/apis",

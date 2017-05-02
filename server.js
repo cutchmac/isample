@@ -11,9 +11,13 @@ const SVC_PORT = process.env.SVC_PORT;
 
 
 /** Server Configuration **/
-svc.disable('x-powered-by');
 svc.use(bodyParser.json({limit: '5mb'}));
 svc.use(bodyParser.urlencoded({limit: '5mb', extended: true}));
+svc.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 svc.get('/status', (req, res) => {
   res.status(200).send(`${SVC_NAME} Service running on http://${SVC_NAME}:${SVC_PORT}`);

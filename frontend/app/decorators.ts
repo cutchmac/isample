@@ -14,12 +14,6 @@ export interface IComponentConfig {
   providers?: Array<any>;
 }
 
-export interface IServiceConfig {
-  moduleId: string;
-  service: string;
-  providers?: Array<any>;
-}
-
 export const Component = (config: IComponentConfig) => {
   return (controller: any) => {
     
@@ -54,38 +48,4 @@ export const Component = (config: IComponentConfig) => {
   }
 };
 
-export const Service = (config: IServiceConfig) => {
-  let modName = (config.moduleId) ? config.moduleId : null;
-  
-  return (target: any) => {
-    let providers = config.providers;
-    if (providers && providers.length > 0) {
-      target.prototype.$inject = providers;
-      target.$inject = providers;
-    }
-    
-    let mod = angular.module(modName);
-    mod.service(config.service, target);
-    //return target;
-  }
-};
 
-
-export const Filter = (name) => {
-  return (target: any) => {
-    let filter = function () {
-      let instance = new target();
-      return instance.filter;
-    };
-    let mod = angular.module('core');
-    mod.filter(name, filter);
-  }
-};
-
-export const Config = (moduleName) => {
-  return (target: any) => {
-    let mod = angular.module(moduleName);
-    mod.config(target);
-    return target;
-  }
-};
